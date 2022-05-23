@@ -5,8 +5,8 @@
     <form action="" method="post" novalidate>
         {{ form.hidden_tag() }}
         <p>
-            {{ form.data.label }}<br>
-            {{ form.data(size=32) }}
+            {{ form.data.label(class="form-label") }}<br>
+            {{ form.data(class="input-field") }}
             {% for error in form.data.errors %}
             <span style="color: red;">[{{ error }}]</span>
             {% endfor %}
